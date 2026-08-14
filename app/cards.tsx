@@ -6,8 +6,12 @@ export default function Cards(){
     return(
         <View>
             <TouchableOpacity onPress={() => router.push('/')}>
-                <Text>Sair</Text>
+                <Text style={s.btnExt}>Sair</Text>
             </TouchableOpacity>
+
+            <View>
+                <Text style={s.txt}>Cards</Text>
+            </View>
 
             <View style={s.nav}>
                 <TouchableOpacity onPress={() => router.push('/contact')}>
@@ -36,5 +40,20 @@ const s = StyleSheet.create({
         width: 42,
         height: 42,
         borderRadius: 12
+    }, 
+    btnExt:{
+        backgroundColor: '#BABABA',
+        color: '#ffffff',
+        fontSize: 24 ,
+        textAlign: 'center',
+        top: 30,
+        left: 20,
+        width: 60,
+        height: 40,
+        borderRadius: 12
+    },
+    txt:{
+        textAlign: 'center',
+        top: 350,
     }
 })
