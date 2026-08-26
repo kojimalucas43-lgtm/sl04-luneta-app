@@ -26,18 +26,15 @@ import { Image, ImageBackground, StyleSheet, Text, TouchableOpacity, View } from
     height: '100%',
   },
   logo: {
-    position: 'absolute',
-    top: 150,
-    left: 110
+    alignSelf: 'center',
   },
   btn:{
-    position: 'absolute',
-    bottom: 100,
-    left: 60,
+    alignSelf: 'center',
     backgroundColor:  '#944BBB',
     paddingVertical: 20,
     paddingHorizontal: 100,
-    borderRadius: 12
+    borderRadius: 12,
+    marginTop: 300
   },
   btnText:{
     color:"#ffffff",
