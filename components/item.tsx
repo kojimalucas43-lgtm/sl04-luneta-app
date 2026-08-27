@@ -1,4 +1,4 @@
-import { View, ImageSourcePropType, Image, StyleSheet} from "react-native-web"
+import { ImageSourcePropType, View, Image, Text, StyleSheet } from "react-native"
 
 
 export const Item = ({picture, title, text} : {picture: ImageSourcePropType, title: string, text: string}) => {
@@ -13,6 +13,6 @@ export const Item = ({picture, title, text} : {picture: ImageSourcePropType, tit
     )
 }
 
-    const s = StyleSheet.create(
-
-    )
+const s = StyleSheet.create({
+    
+})

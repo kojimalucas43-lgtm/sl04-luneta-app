@@ -1,3 +1,4 @@
+
 const data =[
     {
         "id": "1",
@@ -18,3 +19,5 @@ const data =[
         "image": require('@/assets/images/2.png')
     }
 ]
+
+export default data
