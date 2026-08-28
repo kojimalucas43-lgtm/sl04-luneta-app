@@ -1,12 +1,27 @@
 import { router } from "expo-router";
-import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Image, StyleSheet, Text, TouchableOpacity, View, TextInput } from "react-native";
 
 export default function contact(){
     return(
-        <View>
-            <View>
-                <Text>Contato</Text>
+        <View style={s.screen}>
+            <Text>Contato</Text>
+            
+            <View >
+                <View >
+                    <Text>Nome</Text>
+                    <TextInput placeholder="Digite seu Nome" />
+                </View>
+                <View>
+                    <Text>Mensagem</Text>
+                    <TextInput placeholder="Digite sua Mensagem" />
+                </View>
             </View>
+
+            <TouchableOpacity>  
+                <Text>ENVIAR</Text>
+            </TouchableOpacity>
+
+            <Image source={require("../assets/icons/lol.png")}/>
 
             <View style={s.nav}>
                 <TouchableOpacity onPress={() => router.push('/unity')}>
@@ -22,6 +37,9 @@ export default function contact(){
 }
 
 const s = StyleSheet.create({
+    screen:{
+        flex:1
+    },
     nav:{
         position: "fixed",
         bottom: 0,

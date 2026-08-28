@@ -30,7 +30,7 @@ import { Image, ImageBackground, StyleSheet, Text, TouchableOpacity, View } from
   },
   btn:{
     alignSelf: 'center',
-    backgroundColor:  '#944BBB',
+    backgroundColor:  '#5f5f5f',
     paddingVertical: 20,
     paddingHorizontal: 100,
     borderRadius: 12,
