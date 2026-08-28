@@ -21,7 +21,7 @@ export default function contact(){
                 <Text>ENVIAR</Text>
             </TouchableOpacity>
 
-            <Image source={require("../assets/icons/lol.png")}/>
+            <Image source={require("../assets/images/img1.png")}/>
 
             <View style={s.nav}>
                 <TouchableOpacity onPress={() => router.push('/unity')}>

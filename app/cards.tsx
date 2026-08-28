@@ -6,14 +6,16 @@ import { Item } from "@/components/item";
 export default function Cards(){
     return(
         <View style={s.screen}>
-            <TouchableOpacity onPress={() => router.push('/')}>
-                <Text style={s.btnExt}>SAIR</Text>
-            </TouchableOpacity>
 
             <FlatList data={dados} renderItem={({item}) => (
                 <Item picture={item.image} title={item.title} text={item.text}/>
-            )}>
-
+            )}
+            ListHeaderComponent={() => (
+                <TouchableOpacity onPress={() => router.push('/')}>
+                    <Text style={s.btnExt}>SAIR</Text>
+                </TouchableOpacity>
+            )}
+            >
             </FlatList>
 
         <View style={s.nav}>
@@ -60,4 +62,5 @@ const s = StyleSheet.create({
         marginVertical: 60,
         paddingVertical:3
     },
+    
 })
